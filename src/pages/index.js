@@ -29,6 +29,7 @@ export default (() => {
 			md-padding="16px 0 30px 0"
 			background="--color-primary"
 			min-height="55vh"
+			sm-min-height="42vh"
 		>
 			<Override
 				slot="SectionContent"
@@ -44,11 +45,31 @@ export default (() => {
 				OX1
 			</Text>
 			<Text margin="0px 0 0px 0" font="--lead" min-width="310px" max-width="50%">
-				<Span font-weight="normal">
+				<Span
+					font-weight="normal"
+					overflow-wrap="normal"
+					word-break="normal"
+					white-space="normal"
+					text-indent="0"
+					text-overflow="clip"
+					hyphens="manual"
+					user-select="auto"
+					pointer-events="auto"
+				>
 					Para uma participação coletiva, democratica
 				</Span>
 				{" "}
-				<Strong font="900 32px/48px &quot;Inter&quot;, sans-serif">
+				<Strong
+					font="900 32px/48px &quot;Inter&quot;, sans-serif"
+					overflow-wrap="normal"
+					word-break="normal"
+					white-space="normal"
+					text-indent="0"
+					text-overflow="clip"
+					hyphens="manual"
+					user-select="auto"
+					pointer-events="auto"
+				>
 					que faz sentido
 				</Strong>
 			</Text>

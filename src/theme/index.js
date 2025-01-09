@@ -54,11 +54,11 @@ export default {
 		"googleNanumGothicCoding": "\"Nanum Gothic Coding\", cursive"
 	},
 	"font": {
-		"headline1": "normal 600 48px/1.3 --fontFamily-googleInconsolata",
+		"headline1": "normal 600 36px/1.3 --fontFamily-googleInconsolata",
 		"headline2": "normal 900 24px/1.6 --fontFamily-googleInter",
 		"headline3": "normal 500 48px/1.2 --fontFamily-googleAlegreyaSans",
 		"base": "normal 400 18px/1.5 --fontFamily-googleVarta",
-		"lead": "normal 600 32px/1.5 --fontFamily-googleInter",
+		"lead": "normal 600 28px/1.5 --fontFamily-googleInter",
 		"headline4": "700 32px/1.2 --fontFamily-googleAlegreyaSans",
 		"headline5": "700 24px/1.5 --fontFamily-googleAlegreyaSans"
 	},
