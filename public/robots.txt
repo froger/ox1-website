@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ox1.pt/sitemap-index.xml
