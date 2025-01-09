@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Span, Strong, Section, Box, Input, Button } from "@quarkly/widgets";
+import { Theme, Link, Text, Section, Span, Strong, Box, Input, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override, Formspree } from "@quarkly/components";
@@ -24,6 +24,27 @@ export default (() => {
 			<meta name={"msapplication-TileColor"} content={"#232323"} />
 		</Helmet>
 		<Section
+			padding="36px 0 0 0"
+			quarkly-title="HeroBlock"
+			md-padding="16px 0 30px 0"
+			background="--color-primary"
+			sm-min-height={0}
+		>
+			<Override
+				slot="SectionContent"
+				flex-direction="column"
+				md-flex-wrap="wrap"
+				display="flex"
+				flex-wrap="no-wrap"
+				align-items="center"
+				justify-content="center"
+				flex="1 1 0%"
+			/>
+			<Text margin="0px 0px 0px 32px" font="--headline1" flex="1 1 0%" align-self="flex-start">
+				OX1
+			</Text>
+		</Section>
+		<Section
 			padding="36px 0 128px 0"
 			quarkly-title="HeroBlock"
 			md-padding="16px 0 30px 0"
@@ -41,9 +62,6 @@ export default (() => {
 				justify-content="center"
 				flex="1 1 0%"
 			/>
-			<Text margin="0px 0px 0px 32px" font="--headline1" flex="1 1 0%" align-self="flex-start">
-				OX1
-			</Text>
 			<Text margin="0px 0 0px 0" font="--lead" min-width="310px" max-width="50%">
 				<Span
 					font-weight="normal"
