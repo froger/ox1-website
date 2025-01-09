@@ -32,18 +32,25 @@ export default (() => {
 			background="--color-primary"
 			min-height="55vh"
 			sm-min-height="42vh"
+			width="100%"
+			display="flex"
+			flex-direction="row"
+			justify-content="center"
+			align-items="center"
 		>
 			<Override
 				slot="SectionContent"
 				flex-direction="column"
 				md-flex-wrap="wrap"
-				display="flex"
+				display="block"
 				flex-wrap="no-wrap"
 				align-items="center"
 				justify-content="center"
 				flex="1 1 0%"
+				min-width="310px"
+				max-width="50%"
 			/>
-			<Text margin="0px 0 0px 0" font="--lead" min-width="310px" max-width="50%">
+			<Text margin="0px 0 0px 0" font="--lead">
 				<Span
 					font-weight="normal"
 					overflow-wrap="normal"
