@@ -1,9 +1,9 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Span, Box, Section } from "@quarkly/widgets";
+import { Theme, Link, Text, Span, Strong, Section, Box, Input, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { RawHtml, Override } from "@quarkly/components";
+import { RawHtml, Override, Formspree } from "@quarkly/components";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
@@ -23,53 +23,301 @@ export default (() => {
 			<meta name={"msapplication-TileImage"} content={"https://uploads.quarkly.io/677f0d16e778710018d66478/images/blob.svg?v=2025-01-09T00:51:43.520Z"} />
 			<meta name={"msapplication-TileColor"} content={"#232323"} />
 		</Helmet>
-		<Section padding="36px 0 60px 0" quarkly-title="HeroBlock" md-padding="16px 0 30px 0" height="110vh">
-			<Override slot="SectionContent" flex-direction="row" md-flex-wrap="wrap" />
-			<Box
-				empty-border-color="LightGray"
-				md-width="100%"
-				empty-min-width="64px"
-				empty-min-height="64px"
-				empty-border-width="1px"
-				empty-border-style="solid"
+		<Section
+			padding="36px 0 128px 0"
+			quarkly-title="HeroBlock"
+			md-padding="16px 0 30px 0"
+			height="55vh"
+			background="--color-primary"
+		>
+			<Override
+				slot="SectionContent"
+				flex-direction="column"
+				md-flex-wrap="wrap"
+				display="flex"
+				flex-wrap="no-wrap"
+				align-items="center"
+				justify-content="center"
 				flex="1 1 0%"
-				text-align="center"
-				align-self="center"
+			/>
+			<Text margin="0px 0px 0px 32px" font="--headline1" flex="1 1 0%" align-self="flex-start">
+				OX1
+			</Text>
+			<Text margin="0px 25% 0px 25%" font="--lead" min-width="310px">
+				<Span font-weight="normal">
+					Para uma participação coletiva, democratica
+				</Span>
+				{" "}
+				<Strong font="900 32px/48px &quot;Inter&quot;, sans-serif">
+					que faz sentido
+				</Strong>
+			</Text>
+		</Section>
+		<Section
+			padding="36px 0 36px 0"
+			quarkly-title="HeroBlock"
+			md-padding="16px 0 30px 0"
+			background="--color-lightD1"
+			justify-content="flex-start"
+			align-items="flex-start"
+			flex-direction="row"
+			width="100%"
+		>
+			<Override
+				slot="SectionContent"
+				flex-direction="column"
+				md-flex-wrap="wrap"
+				display="block"
+				flex-wrap="no-wrap"
+				align-items="center"
+				justify-content="center"
+				flex="0 1 auto"
+				margin="0 25% 0px 25%"
+				align-self="auto"
+				min-width="310px"
+				overflow="visible"
+			/>
+			<Text font="--base" display="block" width="100%">
+				Ox1 é uma empresa portuguesa que fornece apoio tecnológico e humano aos coletivos. Centrada na participação cidadã, nossa mágica mistura escuta, criatividade e experimentação.{" "}
+				<br />
+				<br />
+				💖 Amamos navegar nesse universo complexo e acolhedor.
+			</Text>
+		</Section>
+		<Section
+			padding="36px 0 128px 0"
+			quarkly-title="HeroBlock"
+			md-padding="16px 0 30px 0"
+			background="--color-lightD1"
+			justify-content="flex-start"
+			align-items="flex-start"
+			min-height="100vh"
+		>
+			<Override
+				slot="SectionContent"
+				flex-direction="column"
+				md-flex-wrap="wrap"
+				display="flex"
+				flex-wrap="no-wrap"
+				align-items="center"
+				justify-content="flex-start"
+				flex="1 1 0%"
+				margin="0 25% 0px 25%"
+				min-width="310px"
+			/>
+			<Text margin="0px 0 32px 0" font="--headline2" align-self="flex-start">
+				Nossas propostas
+			</Text>
+			<Box
+				min-width="100%"
+				min-height="100px"
+				overflow="visible"
+				display="flex"
+				flex-direction="row"
+				flex-wrap="no-wrap"
+				align-items="stretch"
+				justify-content="flex-start"
+				quarkly-title="ProposalBox"
+				width="100%"
+				margin="16px 0px 16px 0px"
+				background="--color-secondary"
+				flex="1 1 0%"
 			>
-				<Text
-					font="--headline1"
-					color="--light"
-					margin="0 0px 0px 0px"
-					lg-font="normal 700 50px/1.2 --fontFamily-googleAlegreyaSans, sans-serif"
-					md-font="normal 700 40px/1.2 --fontFamily-googleAlegreyaSans, sans-serif"
-					md-margin="0px 0px 24px 0px"
+				<Box
+					min-width="128px"
+					background="url(https://uploads.quarkly.io/677f0d16e778710018d66478/images/2025-01-09_10-51_1.png?v=2025-01-09T10:52:05.710Z) top/cover scroll"
+					flex="1 1 0%"
+					display="flex"
+					justify-content="center"
+					align-items="center"
+					padding="0px 35% 0px 0px"
+				/>
+				<Box
+					min-width="100px"
+					min-height="100px"
+					padding="8px 8px 16px 16px"
+					display="flex"
+					flex-direction="column"
+					flex-wrap="no-wrap"
+					grid-row-gap="8px"
 				>
-					Ox1
-				</Text>
-				<Text
-					text-align="center"
-					lg-font="normal 600 16px/1.5 &quot;Varta&quot;, sans-serif"
-					lg-margin="80px 0px 0px 0px"
-					md-margin="0px 0px 0px 0px"
-					margin="18px 0px 0px 0px"
-					color="--light"
-					font="--lead"
+					<Text margin="0px 0px 0px 0px" font="normal 700 24px/1.5 --fontFamily-googleInconsolata">
+						ASSOCIAÇÕES E COLETIVOS
+					</Text>
+					<Text margin="0px 0px 0px 0px" font="21px --fontFamily-googleInconsolata">
+						Organize e sistematize seus coletivos com plataformas livres e open-source, inspirando-se em práticas modernas de autogestão e movimentos cidadãos.
+					</Text>
+				</Box>
+			</Box>
+			<Box
+				min-width="100%"
+				min-height="100px"
+				overflow="visible"
+				display="flex"
+				flex-direction="row"
+				flex-wrap="no-wrap"
+				align-items="stretch"
+				justify-content="flex-start"
+				quarkly-title="ProposalBox"
+				width="100%"
+				margin="16px 0px 16px 0px"
+				background="--color-secondary"
+				flex="1 1 0%"
+			>
+				<Box
+					min-width="128px"
+					background="url(https://uploads.quarkly.io/677f0d16e778710018d66478/images/2025-01-09_10-51_1.png?v=2025-01-09T10:52:05.710Z) top/cover scroll"
+					flex="1 1 0%"
+					display="flex"
+					justify-content="center"
+					align-items="center"
+					padding="0px 35% 0px 0px"
+				/>
+				<Box
+					min-width="100px"
+					min-height="100px"
+					padding="8px 8px 16px 16px"
+					display="flex"
+					flex-direction="column"
+					flex-wrap="no-wrap"
+					grid-row-gap="8px"
 				>
-					tecnologia a serviço da{" "}
-					<Span
-						color="--green"
-						overflow-wrap="normal"
-						word-break="normal"
-						white-space="normal"
-						text-indent="0"
-						text-overflow="clip"
-						hyphens="manual"
-						user-select="auto"
-						pointer-events="auto"
-					>
-						democracia
-					</Span>
-				</Text>
+					<Text margin="0px 0px 0px 0px" font="normal 700 24px/1.5 --fontFamily-googleInconsolata">
+						CÂMARAS
+					</Text>
+					<Text margin="0px 0px 0px 0px" font="21px --fontFamily-googleInconsolata">
+						Fomente uma cultura participativa, incluindo a população nas decisões.
+						<br />
+						<br />
+						Ofereça ferramentas essenciais para ativar o potencial cidadão e associativo.
+					</Text>
+				</Box>
+			</Box>
+			<Box
+				min-width="100%"
+				min-height="100px"
+				overflow="visible"
+				display="flex"
+				flex-direction="row"
+				flex-wrap="no-wrap"
+				align-items="stretch"
+				justify-content="flex-start"
+				quarkly-title="ProposalBox"
+				width="100%"
+				margin="16px 0px 16px 0px"
+				background="--color-secondary"
+				flex="1 1 0%"
+			>
+				<Box
+					min-width="128px"
+					background="url(https://uploads.quarkly.io/677f0d16e778710018d66478/images/2025-01-09_10-51_1.png?v=2025-01-09T10:52:05.710Z) top/cover scroll"
+					flex="1 1 0%"
+					display="flex"
+					justify-content="center"
+					align-items="center"
+					padding="0px 35% 0px 0px"
+				/>
+				<Box
+					min-width="100px"
+					min-height="100px"
+					padding="8px 8px 16px 16px"
+					display="flex"
+					flex-direction="column"
+					flex-wrap="no-wrap"
+					grid-row-gap="8px"
+				>
+					<Text margin="0px 0px 0px 0px" font="normal 700 24px/1.5 --fontFamily-googleInconsolata">
+						FACILITADORES
+					</Text>
+					<Text margin="0px 0px 0px 0px" font="21px --fontFamily-googleInconsolata">
+						Adapte seu modelo de negócio para incluir um aspecto digital.{" "}
+						<br />
+						<br />
+						Crie padrões para processos participativos e inove suas metodologias.
+					</Text>
+				</Box>
+			</Box>
+		</Section>
+		<Section background="--color-green" color="--dark" padding="64px 0 64px 0">
+			<Box margin="-16px -16px -16px -16px" display="flex" flex-wrap="wrap">
+				<Box padding="16px 16px 16px 16px" width="50%" lg-width="100%">
+					<Box>
+						<Text
+							font="--headline2"
+							color="--grey"
+							letter-spacing="1px"
+							text-transform="uppercase"
+							margin="0"
+						>
+							💌
+						</Text>
+						<Text font="--lead" max-width="500px" margin="10px 0 0 0">
+							Use este formulário para mandar um e-mail para{" "}
+							<Strong
+								overflow-wrap="normal"
+								word-break="normal"
+								white-space="normal"
+								text-indent="0"
+								text-overflow="clip"
+								hyphens="manual"
+								user-select="auto"
+								pointer-events="auto"
+							>
+								<Link
+									overflow-wrap="normal"
+									word-break="normal"
+									white-space="normal"
+									text-indent="0"
+									text-overflow="clip"
+									hyphens="manual"
+									user-select="auto"
+									pointer-events="auto"
+									href="mailto:ola@ox1.pt"
+								>
+									ola@ox1.pt
+								</Link>
+							</Strong>
+						</Text>
+					</Box>
+				</Box>
+				<Box width="50%" padding="8px 8px 8px 8px" lg-width="100%">
+					<Box>
+						<Formspree endpoint="xeqpgrlv">
+							<Box
+								gap="16px"
+								display="grid"
+								flex-direction="row"
+								flex-wrap="wrap"
+								grid-template-columns="repeat(2, 1fr)"
+								grid-gap="16px"
+							>
+								<Box sm-width="100%" display="flex" flex-direction="column">
+									<Text font="--base" margin="0 0 4px 0">
+										E-mail
+									</Text>
+									<Input width="100%" type="email" name="email" />
+								</Box>
+								<Box display="flex" flex-direction="column" grid-column="1 / span 2">
+									<Text font="--base" margin="0 0 4px 0">
+										Sua messagem
+									</Text>
+									<Input as="textarea" rows="4" width="100%" name="message" />
+								</Box>
+								<Box display="flex" flex-direction="column" align-items="flex-start" grid-column="1 / span 2">
+									<Button
+										background="--color-primary"
+										padding="13px 32px 13px 32px"
+										font="normal 400 18px/1.5 --fontFamily-googleInter"
+										border-radius="4px"
+										color="--darkL1"
+									>
+										ENVIAR
+									</Button>
+								</Box>
+							</Box>
+						</Formspree>
+					</Box>
+				</Box>
 			</Box>
 		</Section>
 		<Link

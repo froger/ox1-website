@@ -30,13 +30,14 @@ export default {
 		"light": "#ffffff",
 		"lightD1": "#F7FBFF",
 		"lightD2": "#E4E8EC",
-		"green": "#E3FF39",
-		"primary": "#0077CC",
-		"secondary": "#FFC400",
+		"green": "#BAF2E9",
+		"primary": "#f5c83f",
+		"secondary": "#81C3D7",
 		"orange": "#FF7C22",
 		"red": "#DE350B",
 		"purple": "#FD6DF9",
-		"indigo": "#9B6CFC"
+		"indigo": "#9B6CFC",
+		"primary30": "rgba(245, 200, 63, 0.3)"
 	},
 	"fontFamily": {
 		"sans": "-apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
@@ -48,16 +49,16 @@ export default {
 		"serifTimes": "Cambria, 'Hoefler Text', Utopia, 'Liberation Serif', 'Nimbus Roman No9 L Regular', Times, 'Times New Roman', serif",
 		"serifGeorgia": "Constantia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif",
 		"serifGaramond": "'Palatino Linotype', Palatino, Palladio, 'URW Palladio L', 'Book Antiqua', Baskerville, 'Bookman Old Style', 'Bitstream Charter', 'Nimbus Roman No9 L', Garamond, 'Apple Garamond', 'ITC Garamond Narrow', 'New Century Schoolbook', 'Century Schoolbook', 'Century Schoolbook L', Georgia, serif",
-		"googleVarta": "\"Varta\", sans-serif",
-		"googleAlegreyaSans": "\"Alegreya Sans\", sans-serif",
-		"googleInter": "\"Inter\", sans-serif"
+		"googleInter": "\"Inter\", sans-serif",
+		"googleInconsolata": "\"Inconsolata\", monospace",
+		"googleNanumGothicCoding": "\"Nanum Gothic Coding\", cursive"
 	},
 	"font": {
-		"headline1": "normal 700 80px/1.2 --fontFamily-googleAlegreyaSans",
-		"headline2": "normal 500 50px/1.2 --fontFamily-googleAlegreyaSans",
+		"headline1": "normal 600 48px/1.3 --fontFamily-googleInconsolata",
+		"headline2": "normal 900 24px/1.6 --fontFamily-googleInter",
 		"headline3": "normal 500 48px/1.2 --fontFamily-googleAlegreyaSans",
 		"base": "normal 400 18px/1.5 --fontFamily-googleVarta",
-		"lead": "normal 600 24px/1.5 --fontFamily-googleVarta",
+		"lead": "normal 600 32px/1.5 --fontFamily-googleInter",
 		"headline4": "700 32px/1.2 --fontFamily-googleAlegreyaSans",
 		"headline5": "700 24px/1.5 --fontFamily-googleAlegreyaSans"
 	},
@@ -157,43 +158,6 @@ export default {
 		}
 	},
 	"fonts": {
-		"Varta": {
-			"family": "Varta",
-			"type": "google-fonts",
-			"meta": {
-				"variants": [
-					"300",
-					"regular",
-					"500",
-					"600",
-					"700"
-				],
-				"category": "sans-serif"
-			}
-		},
-		"Alegreya Sans": {
-			"family": "Alegreya Sans",
-			"type": "google-fonts",
-			"meta": {
-				"category": "sans-serif",
-				"variants": [
-					"100",
-					"100italic",
-					"300",
-					"300italic",
-					"regular",
-					"italic",
-					"500",
-					"500italic",
-					"700",
-					"700italic",
-					"800",
-					"800italic",
-					"900",
-					"900italic"
-				]
-			}
-		},
 		"Inter": {
 			"family": "Inter",
 			"type": "google-fonts",
@@ -220,7 +184,35 @@ export default {
 					"900italic"
 				]
 			}
+		},
+		"Inconsolata": {
+			"family": "Inconsolata",
+			"type": "google-fonts",
+			"meta": {
+				"category": "monospace",
+				"variants": [
+					"200",
+					"300",
+					"regular",
+					"500",
+					"600",
+					"700",
+					"800",
+					"900"
+				]
+			}
+		},
+		"Nanum Gothic Coding": {
+			"family": "Nanum Gothic Coding",
+			"type": "google-fonts",
+			"meta": {
+				"category": "handwriting",
+				"variants": [
+					"regular",
+					"700"
+				]
+			}
 		}
 	},
-	"version": 1
+	"version": 4
 }
