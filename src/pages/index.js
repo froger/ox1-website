@@ -9,18 +9,18 @@ export default (() => {
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
 		<Helmet>
 			<title>
-				Grand Canyon Rafting Experience
+				Ox1 - Tecnologia a seriço da democracia
 			</title>
-			<meta name={"description"} content={"Each day, you'll wake up to the smell of freshly brewed coffee, and the sounds of rushing water mingled with the murmur of sleepy voices echoing through the canyon walls."} />
-			<meta property={"og:title"} content={"Grand Canyon Rafting Experience"} />
-			<meta property={"og:description"} content={"Each day, you'll wake up to the smell of freshly brewed coffee, and the sounds of rushing water mingled with the murmur of sleepy voices echoing through the canyon walls."} />
-			<meta property={"og:image"} content={"https://uploads.quarkly.io/6166a2b829a0a1001e6ca5fd/images/og%20img.png?v=2021-10-13T09:16:11.796Z"} />
-			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/6166a2b829a0a1001e6ca5fd/images/noto_snow-capped-mountain.png?v=2021-10-13T09:17:21.731Z"} type={"image/x-icon"} />
-			<link rel={"apple-touch-icon"} href={"https://uploads.quarkly.io/6166a2b829a0a1001e6ca5fd/images/noto_snow-capped-mountain127.png?v=2021-10-13T09:17:28.297Z"} />
-			<link rel={"apple-touch-icon"} sizes={"76x76"} href={"https://uploads.quarkly.io/6166a2b829a0a1001e6ca5fd/images/noto_snow-capped-mountain127.png?v=2021-10-13T09:17:28.297Z"} />
-			<link rel={"apple-touch-icon"} sizes={"152x152"} href={"https://uploads.quarkly.io/6166a2b829a0a1001e6ca5fd/images/noto_snow-capped-mountain127.png?v=2021-10-13T09:17:28.297Z"} />
-			<link rel={"apple-touch-startup-image"} href={"https://uploads.quarkly.io/6166a2b829a0a1001e6ca5fd/images/noto_snow-capped-mountain127.png?v=2021-10-13T09:17:28.297Z"} />
-			<meta name={"msapplication-TileImage"} content={"https://uploads.quarkly.io/6166a2b829a0a1001e6ca5fd/images/og%20img.png?v=2021-10-13T09:16:11.796Z"} />
+			<meta name={"description"} content={"Ox1 traz competências únicas em participação digital e presencial, oferecendo ferramentas que tornam processos mais transparentes e acessíveis, fortalecendo a disseminação da participação social."} />
+			<meta property={"og:title"} content={"Ox1 - Tecnologia a serviço da democracia, conectando cidadãos e instituições para transformar participação social."} />
+			<meta property={"og:description"} content={"Ox1 traz competências únicas em participação digital e presencial, oferecendo ferramentas que tornam processos mais transparentes e acessíveis, fortalecendo a disseminação da participação social."} />
+			<meta property={"og:image"} content={"https://uploads.quarkly.io/677f0d16e778710018d66478/images/blob.svg?v=2025-01-09T00:51:43.520Z"} />
+			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/677f0d16e778710018d66478/images/blob.svg?v=2025-01-09T00:51:43.520Z"} type={"image/x-icon"} />
+			<link rel={"apple-touch-icon"} href={"https://uploads.quarkly.io/677f0d16e778710018d66478/images/blob.svg?v=2025-01-09T00:51:43.520Z"} />
+			<link rel={"apple-touch-icon"} sizes={"76x76"} href={"https://uploads.quarkly.io/677f0d16e778710018d66478/images/blob.svg?v=2025-01-09T00:51:43.520Z"} />
+			<link rel={"apple-touch-icon"} sizes={"152x152"} href={"https://uploads.quarkly.io/677f0d16e778710018d66478/images/blob.svg?v=2025-01-09T00:51:43.520Z"} />
+			<link rel={"apple-touch-startup-image"} href={"https://uploads.quarkly.io/677f0d16e778710018d66478/images/blob.svg?v=2025-01-09T00:51:43.520Z"} />
+			<meta name={"msapplication-TileImage"} content={"https://uploads.quarkly.io/677f0d16e778710018d66478/images/blob.svg?v=2025-01-09T00:51:43.520Z"} />
 			<meta name={"msapplication-TileColor"} content={"#232323"} />
 		</Helmet>
 		<Section padding="36px 0 60px 0" quarkly-title="HeroBlock" md-padding="16px 0 30px 0" height="110vh">
