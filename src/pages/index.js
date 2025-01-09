@@ -27,8 +27,8 @@ export default (() => {
 			padding="36px 0 128px 0"
 			quarkly-title="HeroBlock"
 			md-padding="16px 0 30px 0"
-			height="55vh"
 			background="--color-primary"
+			min-height="55vh"
 		>
 			<Override
 				slot="SectionContent"
@@ -58,7 +58,7 @@ export default (() => {
 			quarkly-title="HeroBlock"
 			md-padding="16px 0 30px 0"
 			background="--color-lightD1"
-			justify-content="flex-start"
+			justify-content="center"
 			align-items="flex-start"
 			flex-direction="row"
 			width="100%"
@@ -72,10 +72,11 @@ export default (() => {
 				align-items="center"
 				justify-content="center"
 				flex="0 1 auto"
-				margin="0 25% 0px 25%"
+				margin="0 0 0px 0"
 				align-self="auto"
 				min-width="310px"
 				overflow="visible"
+				max-width="50%"
 			/>
 			<Text font="--base" display="block" width="100%">
 				Ox1 é uma empresa portuguesa que fornece apoio tecnológico e humano aos coletivos. Centrada na participação cidadã, nossa mágica mistura escuta, criatividade e experimentação.{" "}
@@ -89,7 +90,7 @@ export default (() => {
 			quarkly-title="HeroBlock"
 			md-padding="16px 0 30px 0"
 			background="--color-lightD1"
-			justify-content="flex-start"
+			justify-content="center"
 			align-items="flex-start"
 			min-height="100vh"
 		>
@@ -102,8 +103,9 @@ export default (() => {
 				align-items="center"
 				justify-content="flex-start"
 				flex="1 1 0%"
-				margin="0 25% 0px 25%"
 				min-width="310px"
+				margin="0px 0 0px 0"
+				max-width="50%"
 			/>
 			<Text margin="0px 0 32px 0" font="--headline2" align-self="flex-start">
 				Nossas propostas
@@ -122,6 +124,9 @@ export default (() => {
 				margin="16px 0px 16px 0px"
 				background="--color-secondary"
 				flex="1 1 0%"
+				sm-display="flex"
+				sm-flex-direction="column"
+				sm-flex-wrap="no-wrap"
 			>
 				<Box
 					min-width="128px"
@@ -163,6 +168,9 @@ export default (() => {
 				margin="16px 0px 16px 0px"
 				background="--color-secondary"
 				flex="1 1 0%"
+				sm-display="flex"
+				sm-flex-direction="column"
+				sm-flex-wrap="no-wrap"
 			>
 				<Box
 					min-width="128px"
@@ -207,6 +215,9 @@ export default (() => {
 				margin="16px 0px 16px 0px"
 				background="--color-secondary"
 				flex="1 1 0%"
+				sm-display="flex"
+				sm-flex-direction="column"
+				sm-flex-wrap="no-wrap"
 			>
 				<Box
 					min-width="128px"
