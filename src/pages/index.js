@@ -43,7 +43,7 @@ export default (() => {
 			<Text margin="0px 0px 0px 32px" font="--headline1" flex="1 1 0%" align-self="flex-start">
 				OX1
 			</Text>
-			<Text margin="0px 25% 0px 25%" font="--lead" min-width="310px">
+			<Text margin="0px 0 0px 0" font="--lead" min-width="310px" max-width="50%">
 				<Span font-weight="normal">
 					Para uma participação coletiva, democratica
 				</Span>
