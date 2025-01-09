@@ -1,9 +1,10 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Section, Span, Strong, Box, Input, Button } from "@quarkly/widgets";
+import { Theme, Link, Span, Strong, Text, Section, Box, Input, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override, Formspree } from "@quarkly/components";
+import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
@@ -23,27 +24,7 @@ export default (() => {
 			<meta name={"msapplication-TileImage"} content={"https://uploads.quarkly.io/677f0d16e778710018d66478/images/blob.svg?v=2025-01-09T00:51:43.520Z"} />
 			<meta name={"msapplication-TileColor"} content={"#232323"} />
 		</Helmet>
-		<Section
-			padding="36px 0 0 0"
-			quarkly-title="HeroBlock"
-			md-padding="16px 0 30px 0"
-			background="--color-primary"
-			sm-min-height={0}
-		>
-			<Override
-				slot="SectionContent"
-				flex-direction="column"
-				md-flex-wrap="wrap"
-				display="flex"
-				flex-wrap="no-wrap"
-				align-items="center"
-				justify-content="center"
-				flex="1 1 0%"
-			/>
-			<Text margin="0px 0px 0px 32px" font="--headline1" flex="1 1 0%" align-self="flex-start">
-				OX1
-			</Text>
-		</Section>
+		<Components.MainNavigation />
 		<Section
 			padding="36px 0 128px 0"
 			quarkly-title="HeroBlock"
